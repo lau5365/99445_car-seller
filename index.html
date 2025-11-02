@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoHub - Your Trusted Car Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      background: url('https://tse1.mm.bing.net/th/id/OIP.woFrmaTBpprfDlavUeHlewHaEK?rs=1&pid=ImgDetMain&o=7&rm=3') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .car {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 15px;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .car:hover {
+      transform: scale(1.05);
+    }
+
+    .car img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car h3 {
+      margin: 10px;
+      font-size: 1.4em;
+    }
+
+    .car p {
+      margin: 0 10px 10px;
+      color: #666;
+    }
+
+    .price {
+      color: #e63946;
+      font-weight: bold;
+      margin: 10px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact form input, .contact form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact form button:hover {
+      background-color: #ff5c5c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AutoHub</h1>
+    <p>Your Trusted Marketplace for Buying and Selling Cars</p>
+  </header>
+
+  <nav>
+    <a href="#cars">Cars</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Find Your Dream Car Today</h1>
+    <p>Affordable prices, trusted sellers, and top-quality vehicles.</p>
+  </section>
+
+  <section id="cars" class="cars">
+    <div class="car">
+      <img src="https://avatars.mds.yandex.net/get-verba/997355/2a0000018da2a70e4cd8f73cfb4c0fb6c36e/cattouchret" alt="Car 1">
+      <h3>2022 BMW M4</h3>
+      <p>Sporty and luxurious with low mileage and premium features.</p>
+      <p class="price">$65,000</p>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Car 2">
+      <h3>2021 Audi A4</h3>
+      <p>Elegant design, smooth ride, and advanced safety systems.</p>
+      <p class="price">$42,500</p>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=800&q=80" alt="Car 3">
+      <h3>2020 Tesla Model 3</h3>
+      <p>Electric performance, autopilot, and modern technology.</p>
+      <p class="price">$49,900</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to sell your car? Reach out below!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="5" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
